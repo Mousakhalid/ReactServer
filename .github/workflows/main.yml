@@ -10,11 +10,11 @@ jobs:
      name: Deploying to surge
      steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      # Install node version 12
-      - uses: actions/setup-node@v2-beta
+      - uses: actions/checkout@v3
+      # Install node version 16
+      - uses: actions/setup-node@v3
         with:
-          node-version: '12'
+          node-version: '16'
 
       # Install npm packages
       - name: Install packages
